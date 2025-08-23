@@ -1,23 +1,23 @@
+# JavaServerPages_JSP  
+
+A beginner-friendly **JavaServer Pages (JSP)** sample project that demonstrates JSP basics and best practices.  
+
+***
+
+## Overview  
+
+This project is a JSP-based web application built on **Java Servlets + JSP**. It shows how to:  
+
+- Embed Java code directly in HTML using scriptlets, expressions, and declarations  
+- Use **JSP Expression Language (EL)** for cleaner and safer dynamic content  
+- Integrate **JSTL (JavaServer Pages Standard Tag Library)** for conditional logic and iteration  
+- Follow a simple **MVC-style flow** where Servlets process requests, and JSP pages handle the presentation  
+
+***
+
+## Project Structure  
+
 ```
-# JavaServerPages_JSP
-
-A beginner-friendly **JavaServer Pages (JSP)** sample project demonstrating JSP basics and best practices.
-
----
-
-##  Overview
-
-This repository contains a JSP-based web application built on **Java Servlets + JSP**.  
-It showcases:
-
-- Embedding Java code in HTML using **scriptlets, expressions, and declarations**  
-- Using **JSP Expression Language (EL)** for cleaner dynamic content  
-- Integrating **JSTL (JavaServer Pages Standard Tag Library)** for conditional logic and iteration  
-- Following a simple **MVC-style flow**: Servlets for request processing, JSP for rendering  
-
----
-
-##  Project Structure
 JavaServerPages_JSP/
 │
 ├── src/
@@ -34,69 +34,90 @@ JavaServerPages_JSP/
 │           ├── index.jsp
 │           └── hello.jsp
 │
-├── pom.xml      # if using Maven
+├── pom.xml         (if using Maven)
 └── README.md
+```
 
----
+***
 
-##  Prerequisites
+## Prerequisites  
 
-- **Java Development Kit (JDK) 8+**  
-- **Apache Tomcat** (or any Servlet container)  
-- **Maven/Gradle** (optional, if using build tools)  
+- JDK 8 or above  
+- Apache Tomcat (or any compatible servlet container)  
+- Maven or Gradle (optional, if using build tools)  
 
----
+***
 
-## ▶ Running the Project
+## Running the Project  
 
-### 1. Build (if using Maven)
+### 1. Build (if using Maven)  
 
+```
 mvn clean package
-Run with Tomcat Maven Plugin:
+```
+
+To run with the Tomcat Maven plugin:  
+
+```
 mvn tomcat10:run
-Or manually deploy the generated `.war` file to Tomcat’s `webapps/` directory.
----
+```
 
-### 2. Access the Application
+Or manually deploy the generated `war` file into Tomcat’s `webapps/` directory.  
 
-* Open: [http://localhost:8080/](http://localhost:8080/) → loads `index.jsp`
-* Go to: [http://localhost:8080/hello](http://localhost:8080/hello) → mapped in `web.xml`, handled by `HelloServlet`, forwarded to `hello.jsp`
+***
 
----
+### 2. Access the Application  
 
-##  What You’ll Learn
-###  JSP Syntax & Structure
+- Open in browser:  
+  ```
+  http://localhost:8080/
+  ```
+  Loads `index.jsp`  
 
-* **Scriptlets:** `<% ... %>` → Embed Java code
-* **Expressions:** `<%= expression %>` → Outputs result
-* **Declarations:** `<%! ... %>` → Define methods/variables
+- Visit:  
+  ```
+  http://localhost:8080/hello
+  ```
+  Request is handled by `HelloServlet`, then forwarded to `hello.jsp`  
 
-###  Directives
+***
 
-* `<%@ page ... %>` → Page-level settings
-* `<%@ include file="..." %>` → Static include
-* `<%@ taglib ... %>` → Import tag libraries like JSTL
+## What You Will Learn  
 
-###  Expression Language (EL)
+### JSP Syntax and Structure  
 
-* `${...}` → Access properties / evaluate expressions
-* Cleaner & safer than scriptlets
+- Scriptlets: `<% ... %>` → Embed Java code  
+- Expressions: `<%= expression %>` → Output result into page  
+- Declarations: `<%! ... %>` → Define methods or member variables  
 
-###  MVC Flow
+### Directives  
 
-* HelloServlet.java → Handles request, sets attributes
-* hello.jsp →Renders data using EL/JSTL
+- `<%@ page ... %>` → Page-level settings  
+- `<%@ include file="..." %>` → Include static content  
+- `<%@ taglib ... %>` → Import and use libraries like JSTL  
 
-## Example Screens
-* index.jsp – Welcome page with link to servlet
-* hello.jsp – Displays dynamic data from servlet using EL
+### Expression Language (EL)  
 
----
+- Syntax: `${...}`  
+- Access data, object properties, and evaluate conditions  
+- Safer and cleaner alternative to embedding Java directly in JSP  
 
-## Author
+### MVC Flow  
 
- Sai Shiva Merugu
- GitHub: [https://github.com/saishivamerugu](https://github.com/saishivamerugu)
+- `HelloServlet.java` → Handles the request and sets attributes  
+- `hello.jsp` → Reads attributes using EL and JSTL to render output  
 
+***
 
+## Example Screens  
+
+- `index.jsp` → Welcome page with a link to the servlet  
+- `hello.jsp` → Displays dynamic data coming from `HelloServlet` using EL and JSTL  
+
+***
+
+## Author  
+
+Sai Shiva Merugu  
+GitHub: [https://github.com/saishivamerugu](https://github.com/saishivamerugu)  
 
