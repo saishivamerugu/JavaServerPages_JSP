@@ -19,7 +19,7 @@ It showcases:
 
 ##  Project Structure
 
-```
+
 
 JavaServerPages_JSP/
 │
@@ -41,7 +41,7 @@ JavaServerPages_JSP/
 └── README.md
 
 
-````
+
 
 ---
 
