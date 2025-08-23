@@ -56,15 +56,15 @@ JavaServerPages_JSP/
 ## ▶ Running the Project
 
 ### 1. Build (if using Maven)
-```
+
 mvn clean package
-````
+
 
 Run with Tomcat Maven Plugin:
 
-```
+
 mvn tomcat10:run
-```
+
 
 Or manually deploy the generated `.war` file to Tomcat’s `webapps/` directory.
 
@@ -96,29 +96,25 @@ Or manually deploy the generated `.war` file to Tomcat’s `webapps/` directory.
 * `${...}` → Access properties / evaluate expressions
 * Cleaner & safer than scriptlets
 
-###  JSTL
 
-* `<c:if>` for conditionals
-* `<c:forEach>` for looping
 
 ###  MVC Flow
 
-* **HelloServlet.java** → Handles request, sets attributes
-* **hello.jsp** → Renders data using EL/JSTL
+* HelloServlet.java → Handles request, sets attributes
+* hello.jsp →Renders data using EL/JSTL
 
----
 
 ## Example Screens
 
-* **index.jsp** – Welcome page with link to servlet
-* **hello.jsp** – Displays dynamic data from servlet using EL
+* index.jsp – Welcome page with link to servlet
+* hello.jsp – Displays dynamic data from servlet using EL
 
 ---
 
 ## Author
 
-* Sai Shiva Merugu
-* GitHub: [https://github.com/saishivamerugu](https://github.com/saishivamerugu)
+ Sai Shiva Merugu
+ GitHub: [https://github.com/saishivamerugu](https://github.com/saishivamerugu)
 
----
+
 
