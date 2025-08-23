@@ -21,19 +21,25 @@ It showcases:
 
 ```
 
-JavaServerPages\_JSP/
+JavaServerPages_JSP/
 │
-├── src/main/java/com/example/servlet/
-│   └── HelloServlet.java
+├── src/
+│   └── main/
+│       ├── java/
+│       │   └── com/
+│       │       └── example/
+│       │           └── servlet/
+│       │               └── HelloServlet.java
+│       │
+│       └── webapp/
+│           ├── WEB-INF/
+│           │   └── web.xml
+│           ├── index.jsp
+│           └── hello.jsp
 │
-├── src/main/webapp/
-│   ├── WEB-INF/
-│   │   └── web.xml
-│   ├── index.jsp
-│   └── hello.jsp
-│
-├── pom.xml   (if using Maven)
+├── pom.xml      # if using Maven
 └── README.md
+
 
 ````
 
