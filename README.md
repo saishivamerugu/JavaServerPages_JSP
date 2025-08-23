@@ -18,9 +18,6 @@ It showcases:
 ---
 
 ##  Project Structure
-
-
-
 JavaServerPages_JSP/
 │
 ├── src/
@@ -40,9 +37,6 @@ JavaServerPages_JSP/
 ├── pom.xml      # if using Maven
 └── README.md
 
-
-
-
 ---
 
 ##  Prerequisites
@@ -58,16 +52,9 @@ JavaServerPages_JSP/
 ### 1. Build (if using Maven)
 
 mvn clean package
-
-
 Run with Tomcat Maven Plugin:
-
-
 mvn tomcat10:run
-
-
 Or manually deploy the generated `.war` file to Tomcat’s `webapps/` directory.
-
 ---
 
 ### 2. Access the Application
@@ -78,7 +65,6 @@ Or manually deploy the generated `.war` file to Tomcat’s `webapps/` directory.
 ---
 
 ##  What You’ll Learn
-
 ###  JSP Syntax & Structure
 
 * **Scriptlets:** `<% ... %>` → Embed Java code
@@ -96,16 +82,12 @@ Or manually deploy the generated `.war` file to Tomcat’s `webapps/` directory.
 * `${...}` → Access properties / evaluate expressions
 * Cleaner & safer than scriptlets
 
-
-
 ###  MVC Flow
 
 * HelloServlet.java → Handles request, sets attributes
 * hello.jsp →Renders data using EL/JSTL
 
-
 ## Example Screens
-
 * index.jsp – Welcome page with link to servlet
 * hello.jsp – Displays dynamic data from servlet using EL
 
